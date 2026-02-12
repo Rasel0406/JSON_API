@@ -5,3 +5,27 @@
     color: #000000;
     font-size: 1rem;
 }
+#post_container{
+    max-width: 1160px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    row-gap: 50px;
+}
+.post_card{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px gray;
+    padding: 10px;
+    height: 100%;
+    
+   
+}
+.post_card p{
+    text-align: justify;
+}
+.post_card h2{
+    font-size: 30px;
+    color: chocolate;
+}
