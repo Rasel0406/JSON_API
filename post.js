@@ -1,14 +1,13 @@
-const postData = ()=>{
+const postData = () => {
     const url = "https://jsonplaceholder.typicode.com/posts"
     fetch(url)
-    .then((res)=> res.json())
-    .then((data) => displaypost(data))
+        .then((res) => res.json())
+        .then((data) => displaypost(data))
 };
- const displaypost = (posts)=>{
+const displaypost = (posts) => {
     const postContainer = document.getElementById("post_container");
     postContainer.innerHTML = "";
-    posts.forEach((post)=>{
-        console.log(post);
+    posts.forEach((post) => {
         const div = document.createElement("div")
         div.innerHTML = `
          <div class="post_card">
@@ -17,7 +16,8 @@ const postData = ()=>{
                     </div>
         `
         postContainer.appendChild(div);
-   
+
     })
 
- }
+}
+postData();
